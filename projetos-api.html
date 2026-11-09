@@ -3,51 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça o CREDIT42, projeto acadêmico de crédito inclusivo com dados do Banco Central, e a atuação de Denilson Brito Junior como Scrum Master.">
     <title>Projetos API | Denilson Brito Junior</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <a href="index.html" class="logo">Denilson <span>Brito Junior</span></a>
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <nav class="navbar">
+        <button class="menu-toggle" id="menu-icon" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation"></button>
+        <nav class="navbar" id="primary-navigation" aria-label="Navegação principal">
             <a href="index.html">Início</a>
             <a href="projetos-api.html" aria-current="page">Projetos API</a>
             <a href="trajetoria.html">Trajetória</a>
-            <a href="contato.html">Contato</a>
         </nav>
     </header>
 
-    <section class="services" id="projetos-api">
-        <h2 class="heading">Projetos <span>API</span></h2>
-        <p class="page-description">Aqui estão detalhados os projetos desenvolvidos durante o Aprendizado por Projetos Integrados.</p>
-
-        <div class="services-container">
-            <div class="service-box">
-                <div class="service-info">
-                    <i class="bx bxs-devices"></i>
-                    <h3>Projeto API 1</h3>
-                    <p><strong>Negado pelo Banco: Crédito Inclusivo com Dados do BCB </strong> Contexto e Provocação
-                    Conceder crédito para populações historicamente recusadas por grandes instituições financeiras exige ir além da visão tradicional de risco: exige identificar onde residem o consumo reprimido e a capacidade real de pagamento sustentável. Neste projeto, os alunos do primeiro semestre explorarão como transformar dados econômicos públicos do Banco Central do Brasil (BCB) em inteligência territorial para apoiar decisões de crédito mais inclusivas e responsáveis.
-                    </p>
-                    <p><strong>Solução:</strong> Abordagem Pedagógica e Metodologia
-                    Em vez de construir uma solução a partir do zero, a turma adotará uma abordagem prática e alinhada às dinâmicas do mercado de tecnologia: a engenharia reversa e refatoração de software. Os estudantes tomarão como ponto de partida o projeto RealIT, desenvolvido por veteranos da FATEC, analisando o repositório no GitHub para entender como os dados foram consumidos via API ou arquivos do BCB, como o tratamento foi estruturado em Pandas e qual a lógica por trás da construção do Score de Oportunidade.
-                    </p>
-                    <a href="https://github.com/Meridiano-Tech/API-DSM1" target="blank" class="btn">Ver no GitHub</a>
+    <main>
+        <section class="services portfolio-page" id="projetos-api">
+            <div class="page-shell">
+                <div class="page-intro">
+                    <span class="eyebrow"><i class="bx bx-code-alt" aria-hidden="true"></i> Desenvolvimento e colaboração</span>
+                    <h1 class="heading heading-left">Projetos <span>API</span></h1>
+                    <p class="page-description page-description-left">Experiências práticas em projetos de Aprendizagem por Projetos Integrados (API), conectando tecnologia, análise de dados e trabalho em equipe.</p>
                 </div>
+
+                <article class="project-highlight" aria-labelledby="credit42-title">
+                    <div class="project-highlight-main">
+                        <p class="overline">API 1 <span aria-hidden="true">/</span> Projeto acadêmico</p>
+                        <h2 id="credit42-title">CREDIT42<span class="text-accent">.</span></h2>
+                        <p class="project-subtitle">Crédito inclusivo com inteligência territorial e dados públicos do Banco Central do Brasil.</p>
+                        <div class="tag-list" aria-label="Tecnologias e práticas do projeto">
+                            <span>Scrum</span><span>Python</span><span>Pandas</span><span>Google Colab</span><span>Dados do BCB</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-filled project-link" href="https://github.com/Meridiano-Tech/API-DSM1" target="_blank" rel="noopener noreferrer">
+                        <i class="bx bxl-github" aria-hidden="true"></i> Ver no GitHub
+                    </a>
+                </article>
+
+                <div class="story-list" aria-label="Detalhes do projeto CREDIT42">
+                    <article class="story-panel" id="contexto">
+                        <span class="story-number" aria-hidden="true"></span>
+                        <div class="story-content">
+                            <p class="overline">O desafio</p>
+                            <h2>Contexto e provocação</h2>
+                            <p>Como apoiar a concessão responsável de crédito para pessoas sem comprovação formal de renda, sem desconsiderar sua capacidade real de pagamento? O desafio do CREDIT42 é olhar além dos critérios tradicionais de risco e identificar oportunidades econômicas em diferentes municípios.</p>
+                            <p>O projeto explora dados públicos do Banco Central do Brasil (BCB) para compreender a movimentação financeira e o potencial de regiões com vulnerabilidade social, conciliando inclusão financeira e análise responsável de risco.</p>
+                        </div>
+                    </article>
+
+                    <article class="story-panel" id="solucao">
+                        <span class="story-number" aria-hidden="true"></span>
+                        <div class="story-content">
+                            <p class="overline">A abordagem</p>
+                            <h2>Solução</h2>
+                            <p>Partimos da engenharia reversa e da refatoração do projeto RealIT, desenvolvido por estudantes veteranos da FATEC. A proposta é compreender sua estrutura e evoluir a utilização dos dados econômicos, estudando o consumo de APIs e o tratamento de informações com Python e Pandas.</p>
+                            <p>A análise de indicadores territoriais — incluindo movimentações Pix e outros dados públicos do BCB — ajuda a investigar municípios com atividade comercial e logística relevante e a fundamentar um <strong>Score de Oportunidade</strong> para apoiar a avaliação de crédito.</p>
+                        </div>
+                    </article>
+
+                    <article class="story-panel story-panel-featured" id="contribuicoes">
+                        <span class="story-number" aria-hidden="true"></span>
+                        <div class="story-content">
+                            <p class="overline">Meu papel no projeto</p>
+                            <h2>Minhas contribuições</h2>
+                            <p class="role-callout"><i class="bx bx-group" aria-hidden="true"></i> Scrum Master · Organização, pessoas e suporte técnico</p>
+                            <div class="contribution-grid">
+                                <div class="contribution-item">
+                                    <i class="bx bx-task" aria-hidden="true"></i>
+                                    <h3>Organização das entregas</h3>
+                                    <p>Apoio no planejamento das sprints, estruturação e acompanhamento das tarefas, ajudando a manter prioridades claras e o fluxo de trabalho da equipe.</p>
+                                </div>
+                                <div class="contribution-item">
+                                    <i class="bx bx-conversation" aria-hidden="true"></i>
+                                    <h3>Cuidado com a equipe</h3>
+                                    <p>Facilitação da comunicação, acompanhamento das dificuldades e incentivo à colaboração, à autonomia e a um ambiente de trabalho saudável.</p>
+                                </div>
+                                <div class="contribution-item">
+                                    <i class="bx bx-code-block" aria-hidden="true"></i>
+                                    <h3>Suporte ao Back-end</h3>
+                                    <p>Colaboração na investigação de desafios técnicos e suporte às atividades de back-end relacionadas ao consumo e à organização dos dados.</p>
+                                </div>
+                                <div class="contribution-item">
+                                    <i class="bx bx-data" aria-hidden="true"></i>
+                                    <h3>Python, Pandas e Colab</h3>
+                                    <p>Atuação em notebooks no Google Colab, com Python e Pandas para apoiar o tratamento, a exploração e a visualização de dados utilizados nas análises.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <section class="portfolio-block event-block" aria-labelledby="eventos-heading">
+                    <div class="block-heading">
+                        <span class="eyebrow">Além dos projetos</span>
+                        <h2 id="eventos-heading">Eventos e <span>experiências</span></h2>
+                    </div>
+                    <article class="event-card">
+                        <div class="event-icon"><i class="bx bx-trophy" aria-hidden="true"></i></div>
+                        <div class="event-body">
+                            <p class="overline">FATEC São José dos Campos</p>
+                            <h3>31ª Maratona de Programação da SBC</h3>
+                            <p>Participei da equipe de apoio do evento, uma competição que estimula criatividade, resolução de problemas, colaboração e desenvolvimento de soluções sob pressão.</p>
+                            <a class="section-link" href="https://lnkd.in/p/dn_F6tYX" target="_blank" rel="noopener noreferrer">Ver publicação no LinkedIn <i class="bx bx-right-arrow-alt" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+                </section>
             </div>
-      
-      
-    </section>
+        </section>
+    </main>
 
     <footer class="footer">
-        <ul class="list">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="projetos-api.html">Projetos API</a></li>
-            <li><a href="trajetoria.html">Trajetória</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
         <p class="copyright">Denilson Brito Junior | Todos os direitos reservados</p>
     </footer>
 
