@@ -1,4 +1,4 @@
-## Porfólio profissional - Software Development
+## Portfólio profissional - Software Development
 
 ## 🎓 Sobre o Projeto 
 
@@ -6,7 +6,16 @@ Este repositório contém o **Portólio**, um projeto de cunho não apenas acad�
 
 
 ## OBJETIVO
-Escopo: Desenvolver uma plataforma web responsiva de portfólio, garantindo uma navegação intuitiva e prática, barras de navegação - sobre mim, contato e landing page, botão currículo
+
+<strong>Escopo:</strong> Desenvolver um portfólio web responsivo focado em navegação intuitiva. 
+
+## A plataforma incluirá:
+
+<strong> Páginas e Seções:</strong> Página index projetos-api, trajetoria e Contato;
+<strong>Navegação:</strong> Barra de navegação centralizando os acessos;
+<strong>Funcionalidade:</strong> Botão de acesso direto ao currículo.
+
+
 
 ## Branding visual
 O roxo foi uma escolha vinculada ao estratégica que transmite criatividade, sofisticação, luxo, sabedoria e inovação
