@@ -3,73 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trajetória profissional, habilidades e formação de Denilson Brito Junior.">
     <title>Trajetória | Denilson Brito Junior</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <a href="index.html" class="logo">Denilson <span>Brito Junior</span></a>
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <nav class="navbar">
+        <button class="menu-toggle" id="menu-icon" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation"></button>
+        <nav class="navbar" id="primary-navigation" aria-label="Navegação principal">
             <a href="index.html">Início</a>
             <a href="projetos-api.html">Projetos API</a>
             <a href="trajetoria.html" aria-current="page">Trajetória</a>
-            <a href="contato.html">Contato</a>
         </nav>
     </header>
 
-    <section class="services" id="projetos">
-        <h2 class="heading">Minha <span>Trajetória</span></h2>
-        
-        <div class="services-container">
-            <div class="service-box">
-                <div class="service-info">
-                    <i class="bx bx-briefcase"></i>
-                    <h3>JOHNSON & JOHNSON - Aprendiz administração - Janeiro de 2022 até Dezembro de 2022 </h3>
-                    <p> Suporte às atividades administrativas corporativas e desenvolvimento contínuo através da Trilha de Autodesenvolvimento focado em Relacionamento Interpessoal.  </p>
-                    <p> Suporte às atividades administrativas corporativas e desenvolvimento contínuo através da Trilha de Autodesenvolvimento focado em Relacionamento Interpessoal.  </p>
-                    <div></div>
-                    
-                    <h3> DECATHLON - Vendedor técnico Jr -  Dezembro de 2024 – Junho de 2026 </h3>
-                    <p>Atuação com forte foco na experiência do consumidor, unindo atendimento consultivo de excelência e profundo conhecimento técnico de artigos esportivos. A rotina engloba desde a demonstração prática e aconselhamento personalizado até o suporte completo no pós-venda. Além da linha de frente nas vendas, há participação ativa na gestão e reposição de estoque, garantindo a organização do layout da loja. O trabalho é pautado pela colaboração em equipe para o atingimento de metas e pela atualização constante sobre as inovações do mercado varejista.  </p>
-                
-                
+    <main>
+        <section class="services portfolio-page" id="trajetoria">
+            <div class="page-shell">
+                <div class="page-intro">
+                    <span class="eyebrow"><i class="bx bx-user" aria-hidden="true"></i> Experiências e evolução</span>
+                    <h1 class="heading heading-left">Minha <span>Trajetória</span></h1>
+                    <p class="page-description page-description-left">Minha jornada reúne vivências em empresas de diferentes segmentos, desenvolvimento de competências e formação contínua em tecnologia.</p>
                 </div>
+
+                <section class="portfolio-block" id="experiencias" aria-labelledby="experiencias-heading">
+                    <div class="block-heading">
+                        <span class="eyebrow">01 / Carreira</span>
+                        <h2 id="experiencias-heading">Experiências <span>profissionais</span></h2>
+                        <p>Empresas, cargos e principais responsabilidades.</p>
+                    </div>
+                    <div class="experience-list">
+                        <article class="experience-card">
+                            <div class="experience-aside">
+                                <span class="experience-period">Dez. 2024 – Jun. 2026</span>
+                                <span class="experience-marker" aria-hidden="true"></span>
+                            </div>
+                            <div class="experience-body">
+                                <h3>Decathlon</h3>
+                                <p class="job-title">Vendedor técnico Jr.</p>
+                                <ul class="detail-list">
+                                    <li>Atendimento consultivo e orientação técnica sobre artigos esportivos, com foco na experiência do consumidor.</li>
+                                    <li>Demonstração de produtos, suporte no pós-venda e acompanhamento das necessidades dos clientes.</li>
+                                    <li>Organização do espaço de vendas, reposição e controle de estoque.</li>
+                                    <li>Colaboração com a equipe para o cumprimento de metas e atualização sobre produtos e tendências do varejo.</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="experience-card">
+                            <div class="experience-aside">
+                                <span class="experience-period">Jan. 2022 – Dez. 2022</span>
+                                <span class="experience-marker" aria-hidden="true"></span>
+                            </div>
+                            <div class="experience-body">
+                                <h3>Johnson &amp; Johnson</h3>
+                                <p class="job-title">Aprendiz de Administração</p>
+                                <ul class="detail-list">
+                                    <li>Apoio às rotinas e às atividades administrativas do ambiente corporativo.</li>
+                                    <li>Participação na Trilha de Autodesenvolvimento, com foco em relacionamento interpessoal.</li>
+                                    <li>Desenvolvimento de comunicação e colaboração no contexto profissional.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="portfolio-block" id="habilidades" aria-labelledby="habilidades-heading">
+                    <div class="block-heading">
+                        <span class="eyebrow">02 / Competências</span>
+                        <h2 id="habilidades-heading">Soft &amp; <span>Hard Skills</span></h2>
+                        <p>Habilidades humanas e conhecimentos técnicos construídos ao longo da minha trajetória.</p>
+                    </div>
+                    <div class="skills-grid">
+                        <article class="skill-card">
+                            <div class="skill-heading"><i class="bx bx-group" aria-hidden="true"></i><h3>Soft Skills</h3></div>
+                            <p>Competências para colaborar, comunicar ideias e apoiar equipes.</p>
+                            <ul class="chip-list" aria-label="Habilidades comportamentais">
+                                <li>Comunicação assertiva</li>
+                                <li>Trabalho em equipe</li>
+                                <li>Resolução de problemas</li>
+                                <li>Pensamento crítico</li>
+                                <li>Resiliência</li>
+                                <li>Oratória</li>
+                                <li>Proatividade</li>
+                                <li>Organização</li>
+                            </ul>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-heading"><i class="bx bx-code-alt" aria-hidden="true"></i><h3>Hard Skills</h3></div>
+                            <p>Tecnologias, ferramentas e práticas com as quais tenho contato acadêmico e prático.</p>
+                            <ul class="chip-list" aria-label="Habilidades técnicas">
+                                <li>HTML5 e CSS3</li>
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                                <li>Pandas</li>
+                                <li>Google Colab</li>
+                                <li>Git e GitHub</li>
+                                <li>Scrum e Kanban</li>
+                                <li>Organização de backlogs</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="portfolio-block" id="curriculo" aria-labelledby="curriculo-heading">
+                    <div class="block-heading">
+                        <span class="eyebrow">03 / Formação</span>
+                        <h2 id="curriculo-heading">Informações <span>curriculares</span></h2>
+                        <p>Formação acadêmica e aprendizados complementares.</p>
+                    </div>
+                    <div class="education-grid">
+                        <article class="education-card education-main">
+                            <div class="education-icon"><i class="bx bxs-graduation" aria-hidden="true"></i></div>
+                            <p class="overline">Formação acadêmica</p>
+                            <h3>Desenvolvimento de Software Multiplataforma</h3>
+                            <p>FATEC — Faculdade de Tecnologia</p>
+                            <span class="education-note">Em formação</span>
+                        </article>
+                        <article class="education-card">
+                            <div class="education-icon"><i class="bx bx-book-open" aria-hidden="true"></i></div>
+                            <p class="overline">Curso complementar</p>
+                            <h3>Como Fazer Investimentos</h3>
+                            <p>Fundação Getulio Vargas (FGV Online)</p>
+                        </article>
+                        <article class="education-card">
+                            <div class="education-icon"><i class="bx bx-message-rounded-dots" aria-hidden="true"></i></div>
+                            <p class="overline">Autodesenvolvimento · 2022</p>
+                            <h3>Relacionamento Interpessoal</h3>
+                            <p>Trilha de autodesenvolvimento profissional.</p>
+                        </article>
+                        <article class="education-card">
+                            <div class="education-icon"><i class="bx bx-microphone" aria-hidden="true"></i></div>
+                            <p class="overline">Capacitação · 2018</p>
+                            <h3>Rádio, Mídias e Produção de Eventos</h3>
+                            <p>Formação complementar em comunicação e produção de eventos.</p>
+                        </article>
+                    </div>
+                </section>
             </div>
-
-            <div class="service-box">
-                <div class="service-info">
-                    <i class="bx bx-code-alt"></i>
-                    <h3>Projetos Pessoais</h3>
-                    <p>  </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about curricular" id="curriculo">
-        <div class="about-me-content">
-            <h2>Informações <span>Curriculares</span></h2>
-            <ul class="curricular-list">
-                <li><strong>Formação acadêmica:</strong> Desenvolvimento de Software Multiplataforma - FATEC</li>
-                <li><strong>Cursos complementares:</strong> Como Fazer Investimentos – Fundação Getúlio Vargas (FGV Online)</li>
-                <li><strong>Autodesenvolvimento</strong>: Relacionamento Interpessoal (2022)</li>
-                <li><strong>Capacitação</strong>em Rádio, Mídias e Produção de Eventos (2018)</li>
-
-                <li><strong>Habilidades comportamentais:</strong>Comunicação Assertiva, Resolução de Problemas, Pensamento Crítico, Trabalho em
-Equipe, Resiliência, Oratória e Mentalidade Proativa</li>
-            </ul>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="footer">
-        <ul class="list">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="projetos-api.html">Projetos API</a></li>
-            <li><a href="trajetoria.html">Trajetória</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
         <p class="copyright">Denilson Brito Junior | Todos os direitos reservados</p>
     </footer>
 
