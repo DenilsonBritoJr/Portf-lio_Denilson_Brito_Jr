@@ -1,3 +1,4 @@
+
 /* Navegação mobile*/
 const menuButton = document.getElementById('menu-icon');
 const navigation = document.querySelector('.navbar');
